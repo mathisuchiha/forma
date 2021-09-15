@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Structure</title>
+    </head> 
+    <body>
+		<img src="sources/HTML_Minimum.png" alt="Capture d'écran de HTML">
+		<p>
+			Toute page HTML contient au moins les informations si-dessus.
+		</p>
+		<hr>
+		<p>
+			<strong>&lt;!DOCTYPE html&gt; </strong> Permet au navigateur de savoir quel langage il va interprêter, dans notre cas, du html.
+		</p>
+		<hr>
+		<p>
+			<strong>&lt;html lang="fr"&gt; ... &lt;/html&gt; </strong> Cette balise va contenir tout votre code, vous n'avez normalement rien à écrire hors de ces balises. <br>
+			De plus l'attribut lang va indiquer aux possibles logiciels de synthèse vocale quelle langue sera majoritairement utilisé dans la page.
+		</p>
+		<hr>
+		<p>
+			<strong>&lt;head&gt; ... &lt;/head&gt; </strong> La balise head contiendra du code qui ne s'affichera pas directement mais sera utile au bon fonctionnement
+			de la page. <br>
+			C'est ici que l'on viendra placer les balises title, meta, script, style ou bien link.
+		</p>
+		<hr>
+		<p>
+			<strong>&lt;meta charset="UTF-8"&gt; </strong> La balise meta accueille les metadonnées, c'est à dire les données à propos de votre page,
+			descriptions, mot clef, auteur ... <br>
+			La plus importante de ces information sera <em>charset="UTF-8"</em> cela permet d'indiquer au navigateur quel encodage de caractère utiliser. <br>
+			Si beaucoup d'encodage différent existent, le W3C préconise l'utilisation du UTF-8. De plus il faut la placer en première car elle sera utiliser
+			la balise "title". <br>
+			Les autres metadonnées pouvant être utile mais n'étant pas indispensable au bon fonctionnement de votre site seront abordé un peu plus tard.
+		</p>
+		<hr>
+		<p>
+			<strong>&lt;title&gt; ... &lt;/title&gt; </strong> Cette balise permet de donner un titre à la page, non pas sur la page elle même mais c'est
+			celui qui s'affichera par exemple dans les favoris ou sur l'onglet en haut de votre navigateur.
+		</p>
+		<hr>
+		<p>
+			<strong>&lt;body&gt; ... &lt;/body&gt; </strong> Et enfin la balise body qui renfermera tout le corps de votre page, tout ce qui s'affichera sera ici.
+		</p>
+		<hr>
+		<p>
+			D'autres balises peuvent entrer dans la structure d'une page HTML hors de son contenu même, mais celles ci seront vu dans la prochaine partie.
+		</p>
+    </body>
+</html>

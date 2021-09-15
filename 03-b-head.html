@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Balise Head</title>
+    </head> 
+    <body>
+        <p>
+            <strong>&lt;meta name="author" content="Nolwenn Weber-Marquiset"&gt; </strong> Cette balise comme son nom l'indique sert à indiquer l'auteur 
+			de la page. Pour les tags meta, chaque attribut "name" est accompagné d'un attribut "content" qui respectivement donnerons le nom (titre)
+			de la méta donnée et son contenu.
+        </p>
+		
+        <p>
+            <strong>&lt;meta name="description" content="Cours sur la balise head"&gt; </strong> La description donné ici sera très souvent utilisé pour
+			décrire votre page dans les résultats des moteurs de recherche. Il est conseillé d'en écrire une entre 150 et 160 caractères bien que certains
+			moteurs peuvent aller jusqu'à 300.
+        </p>
+		
+        <p>
+            <strong>&lt;meta name="keywords" content="html, head, balises, meta tag"&gt; </strong> Les mot clefs sont ceux que les robots des moteurs de 
+			recherche utiliserons pour afficher ou non votre page dans les résultats de l'utilisateur. De nos jours les bots sont très performant 
+			et iront aussi chercher directement des mots dans le contenu de votre page, mais il ne faut pas sous-estimer les mots clef pour autant.
+        </p>
+        <p>
+            <strong> &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; </strong> Cette balise bien que non obligatoire est 
+			vivement conseillé de nos jours. Elle permettra de forcer le navigateur à adapter la taille de votre page à la taille de l'écran de l'utilisateur,
+			ainsi que de garder un niveau de zoom par défaut. La plupart des pages garderons les paramètres affichés ici.
+        </p>
+		<hr>
+        <p>
+            <strong>&lt;style media="print" type="text/css"&gt; ... &lt;/style&gt; </strong> La balise style permet d'intégrer du CSS à l'interieur même de 
+			la page, bien que l'on préféra généralement écrire son CSS dans un fichier externe, il peut parfois être utile d'inserer un peu de css comme
+			dans l'exemple précédent. Les attributs de style ne sont pas obligatoire. Cependant "media" permet de préciser dans quel cas utiliser ces règles,
+			par exemple ici, avec l'utilisation d'une imprimante. L'attribut "type" existe pour indiquer quel type de langage est utilisé, mais par défaut 
+			il gère le CSS et est rarement ou pas du tout utilisé pour autre chose, donc peut être oublié.
+        </p>
+		<hr>
+        <p>
+            <strong>&lt;link href="main.css" rel="stylesheet"&gt; </strong> Link permet l'utilisation de ressource externe, elle peut avoir de 
+			multiples utilités, mais deux seront majoritaires et visible sur la plupart des sites. La première est l'implémentation du CSS, comme dans l'exemple 
+			en donnant à l'attribut "rel" le paramètre "stylesheet" et à l'attribut "href" le lien vers votre fichier. La seconde est l'utilisation d'un logo 
+			pour votre site qui s'affichera dans les favoris et les onglets. Avec en "href" le lien vers l'image et en "rel" le paramètre "icon", si vous utilisez
+			une image qui n'est pas en ".ico", il faudra aussi ajouter l'attribut "type" accompagné du type MIME de l'image.
+			
+        </p>
+		<hr>
+        <p>
+            <strong>&lt;script src="main.js" defer&gt;  &lt;/script&gt; </strong> La balise script sera utilisé pour importer le javascript, d'autres
+			langages proche peuvent être utilisé, mais cela reste un cas rare. Là aussi un attribut "type" peut être utilisé, mais par défaut le javascript
+			est géré, on peut donc omettre cet attribut. On peut taper notre code javascript entre ces balises, mais encore une fois on préfèrera le faire
+			depuis un fichier externe. l'attribut "src" permettra d'indiquer quel fichier charger. évidemment, on ne fera pas dans une même balise un import
+			de fichier et du javascript directement dans la page.<br>
+			La page html se charge de haut en bas, donc si elle rencontre un javascript trop lourd, elle pourra mettre un temps bien plus long à se charger,
+			c'est pour cela que certains developpeurs mettaient leur script en bas de page et non en haut comme il faudrait le faire.<br>
+			De nos jours, deux nouveaux attributs ont vu le jour, à placer uniquement si src est présent. async et defer qui continuerons le chargement
+			de javascript en même temps que la page. La premier lancera le script une fois celui ci chargé alors que le second attendra la fin de la page.
+        </p>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Les balises vide et leur types</title>
+    </head> 
+    <body>
+		<div>
+			<p>
+				<strong>Block-level élément</strong> Il existe deux types de balises html, le premier type est le block, ces éléments sont conçu pour 
+				contenir d'autres éléments block ou inline. <br>
+			</p>
+			<ul>
+				<li>Ils prennent par défaut toute la largeur de la page</li>
+				<li>Ils commencent toujours une nouvelle ligne</li>
+				<li>Ils possèdent un "margin" haut et bas</li>
+			</ul>
+			<p>
+				Quelques exceptions sont à compter comme la balise "p" qui ne peut contenir que des éléments inline.
+			</p>
+			<hr>
+			<p>
+				<strong>&lt;div&gt; ... &lt;/div&gt;</strong> L'élément "div" est donc un élément de type block... c'est tout.<br>
+				Il n'a volontairement aucune particularité, il servira en lui donnant des classes ou id afin de mettre en forme votre page via le CSS.
+			</p>
+		</div>
+		<hr>
+		<p>
+			<strong>Inline élément</strong> Le second type est le inline élément :
+		</p>
+		<ul>
+			<li>Ne contient pas d'élément block</li>
+			<li>Ne commence pas de nouvelle ligne</li>
+			<li>Prend seulement la largeur qui lui est necessaire</li>
+			<li>N'as pas de margin haut et bas</li>
+		</ul>
+		<hr>
+		<p>
+			<strong>&lt;span&gt; ... &lt;/span&gt;</strong> L'élément <span>"span"</span> est un élément de type inline... sans autre effet ou règle. <br>
+			De la même façon que pour "div" celui ci sera lié à des classes ou id permettant de faire de la mise en forme.
+		</p>
+		<hr>
+		<p>
+			Il y a des "div" et "span" dans cette page, mais sans CSS, rien de particulier ne s'affiche.
+		</p>
+    </body>
+</html>

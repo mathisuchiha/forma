@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Les formulaires</title>
+    </head> 
+    <body>
+		<form action="#" method="get">
+			<label for="inText">Champ Texte</label>
+			<input type="text" id="inText" name="inText"> 
+			<hr>
+			<input type="radio" id="inPomme" name="inRadio"> 
+			<label for="inPomme">Pomme</label>
+			<input type="radio" id="inOrange" name="inRadio"> 
+			<label for="inOrange">Orange</label>
+			<input type="radio" id="inPeche" name="inRadio"> 
+			<label for="inPeche">Pêche</label>
+			<hr>
+			<input type="checkbox" id="inRiz" name="inRiz"> 
+			<label for="inRiz">Riz</label>
+			<input type="checkbox" id="inPate" name="inPate"> 
+			<label for="inPate">Pâte</label>
+			<input type="checkbox" id="inSemoule" name="inSemoule"> 
+			<label for="inSemoule">Semoule</label>
+			<hr>
+			<label for="nourriture">Champ de selection</label>
+			<select id="nourriture" name="food">
+				<option value="">Choisi ton repas</option>
+				<option value="Patate">Pomme de terre</option>
+				<option value="Asperge">Asperge</option>
+				<option value="Courgette">Courgette</option>
+				<option value="Gingembre">Gingembre</option>
+			</select>
+			<hr>
+			<label for="forArea">Champ zone de texte</label>
+			<textarea id="forArea" name="forArea"></textarea>
+			<hr>
+			<label for="inColor">Champ Couleur</label>
+			<input type="color" id="inColor" name="inColor"> 
+			<hr>
+			<label for="inDate">Champ Date</label>
+			<input type="date" id="inDate" name="inDate"> 
+			<hr>
+			<label for="inMail">Champ Email</label>
+			<input type="email" id="inMail" name="inMail"> 
+			<hr>
+			<label for="inFile">Champ Fichier</label>
+			<input type="file" id="inFile" name="inFile"> 
+			<hr>
+			<label for="inPassword">Champ mot de passe</label>
+			<input type="password" id="inPassword" name="inPassword"> 
+			<hr>
+			<input type="submit" value="Valider">
+			<input type="button" value="Effacer">
+		</form>
+		<img src="sources/formulaire.png" alt="code d'un formulaire">
+		<p>
+			<strong>&lt;form&gt;...&lt;/form&gt;</strong> Tout formulaire commencera et finira par l'élément "form", on ajoutera à celui ci 
+			l'attribut "action" qui prendra en paramètre le lien vers la page qui traitera vos données et l'attribut "method" qui prendra généralement 
+			soit "get" soit "post". <br>
+			get affichera l'envoi des données directement dans l'adresse de la page sous la forme suivante : <br>
+			à la suite de l'adresse un "?" puis le "nom du champ" suivi d'un "=" et enfin la "valeur du champ". chaque champ étant séparé par un "&". <br>
+			Cette méthode est souvent utilisé pour les champs de recherche, mais surtout à éviter si il faut envoyer des données demandant un tant soit peu
+			de sécurité, comme un mot de passe.
+			post lui enverra au contraire les données de façon invisible dans la requête de la page.
+		</p>
+		<hr>
+		<p>
+			<strong>&lt;input&gt;...&lt;/input&gt;</strong> La balise input est la plus souvent utilisé dans un formulaire,  l'attribut "type" peut prendre
+			de nombreux paramètres qui changerons grandement son fonctionnement, dans l'exemple si dessus on pourra retrouver :
+		</p>
+		<ul>
+			<li>text</li>
+			<li>radio</li>
+			<li>checkbox</li>
+			<li>color</li>
+			<li>date</li>
+			<li>email</li>
+			<li>file</li>
+			<li>password</li>
+			<li>submit</li>
+			<li>button</li>
+		</ul>
+		<p>
+			Mais de nombreux autres sont <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/Input" target="_blank">disponible</a>. <br>
+			Quoi qu'il en soit, on ajoutera deux attributs aux inputs, un "id" qui sera utile pour le "label" et un "name" qui sera le nom de la donnée
+			traité par le formulaire. Un peu de la même façon qu'un id, le name sera unique à un formulaire. Attention au champ "radio" où toute les options
+			porterons le même nom mais un id différent.
+		</p>
+		<hr>
+		<p>
+			<strong>&lt;label&gt;...&lt;/label&gt;</strong> Le label permettra de donner un nom visible à votre champ, de plus étant lié au champ, cliquer
+			dessus selectionnera automatiquement le champ en question. On lui donnera l'attribut "for" afin de le lier à son champ en lui mettant en paramètre
+			l'id du champ.
+		</p>
+		<hr>
+		<p>
+			<strong>&lt;textarea&gt;...&lt;/texarea&gt;</strong> Au contraire d'un simple input text, la balise textarea peut être aggrandi par l'utilisateur
+			et peut contenir beaucoup plus de texte. Outre le type, elle prend les mêmes attributs que input.
+		</p>
+		<hr>
+		<p>
+			<strong>&lt;select&gt;...&lt;/select&gt;</strong> et <strong>&lt;option&gt;...&lt;/option&gt;</strong> la balise select contiendra le nombre souhaité
+			de balises options, une par valeur sélectionnable. "select" prendra les mêmes attributs que input, par contre il faudra ajouter l'attribut "value"
+			à chaque option, et ça sera cette valeur qui sera traité par le site et non celle affiché.
+		</p>
+		<hr>
+		<p>
+			Il existe évidement d'autres attributs possibles à tout ces champs. Je citerais par exemple:			
+		</p>
+		<ul>
+			<li>required qui oblige à remplir le champ si on souhaite valider le formulaire</li>
+			<li>autofocus qui passe le focus sur le champ dès que le formulaire est affiché</li>
+			<li>readonly pour mettre un champ en lecture seule</li>
+		</ul>
+    </body>
+</html>
